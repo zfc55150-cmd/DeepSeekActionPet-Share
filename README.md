@@ -1,15 +1,17 @@
 # 蓝鲸女仆桌宠 · Windows 分享包
 
-[点击这里进入下载页面](https://github.com/zfc55150-cmd/DeepSeekActionPet-Share/releases)
+[进入下载页面](https://github.com/zfc55150-cmd/DeepSeekActionPet-Share/releases)
 
-完整包约 6.70 GiB，拆为 14 个分卷，每份最多 512 MiB。包含动画及本地语音环境。请下载全部分卷和合并工具，不要用 GitHub 自动生成的 Source code 代替安装包。
+完整包约 6.70 GiB，含动画和本地语音环境。为适应大文件传输，拆为 72 个分卷，每份最多 96 MiB。
 
-## 下载和安装
+## 自动下载（推荐）
 
-1. 下载 `DeepSeekPet-1.2.1.zip.part01` 至 `.part14`，以及 `parts-manifest.json`、`merge-share.ps1`、`Merge-Then-Extract.cmd`，放在同一文件夹。
-2. 双击 `Merge-Then-Extract.cmd`，等待校验并生成完整 ZIP。
+1. 从发行版附件下载 `Download-All.cmd` 和 `download-share.ps1`，放在同一文件夹。
+2. 双击 `Download-All.cmd`，自动下载全部分卷、逐项校验并合并为 `DeepSeekPet-1.2.1.zip`。中断后可重新运行，已校验的分卷会跳过。
 3. 完整解压 ZIP，双击里面的“安装桌宠.cmd”。
 4. 打开桌面快捷方式，在设置里填写自己的 DeepSeek API Key。
+
+也可以手动下载 `.part01` 至 `.part72`、`parts-manifest.json`、`merge-share.ps1`、`Merge-Then-Extract.cmd`，放在一起运行合并脚本。不要用 GitHub 自动生成的 Source code 代替安装包。
 
 ## 使用条件
 
@@ -24,4 +26,4 @@
 
 基于 dsh-pet 0.3.7 的定制版本 1.2.1，包含 Qwen3-TTS 本地模型与运行依赖。各组件自带说明和许可保留在程序内，本仓库不改变其许可。
 
-31,300 个程序文件的 ZIP 与解压哈希、迁移后的语音依赖导入和分卷重组哈希已验证；未在其他实体电脑完成安装或实际语音验收。
+31,300 个程序文件的 ZIP 与解压哈希、迁移后的语音依赖导入和分卷重组哈希已验证；未在其他实体电脑完成安装或实际语音验收。自动下载的校验、重跑跳过和拒绝覆盖损坏文件逻辑使用本地假文件验证。
